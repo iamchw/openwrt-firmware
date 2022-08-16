@@ -16,5 +16,5 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git luci-app-tcpdump https://github.com/KFERMercer/luci-app-tcpdump' >>feeds.conf.default
-echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
+sed -i '$a src-git luci-app-tcpdump https://github.com/KFERMercer/luci-app-tcpdump' >>feeds.conf.default
+sed -i '$a src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
